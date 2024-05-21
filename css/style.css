@@ -64,12 +64,13 @@ section{
 .btn{
     margin-top: 1rem;
     display: inline-block;
-    padding:.9rem 3rem;
+    padding:.9rem 2rem;
     font-size: 1.7rem;
     color:#1d1c1a;
     /* background: #1d1c1a; */
     background: #ebf400;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .btn:hover{
