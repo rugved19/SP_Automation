@@ -85,7 +85,7 @@ section{
     justify-content: space-between;
     padding:3rem 7%;
     border-bottom: var(--border);
-    position: fixed;
+    position: fixed;  
     top:0; left: 0; right: 0;
     z-index: 1000;
 }
@@ -393,66 +393,6 @@ section{
     color: #fff;
 }
 
-/* .products .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.products .box-container .box{
-    text-align: center;
-    /* border:var(--border);
-    border: 1.5px solid #13131a;
-    padding: 2rem;
-}
-
-.products .box-container .box .icons a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    border:var(--border);
-    color:#1d1c1a;
-    margin:.3rem;
-}
-
-.products .box-container .box .icons a:hover{
-    background:var(--main-color);
-}
-
-.products .box-container .box .image{
-    padding: 2.5rem 0;
-}
-
-.products .box-container .box .image img{
-    height: 25rem;
-}
-
-.products .box-container .box .content h3{
-    color:#1d1c1a;
-    font-size: 2.5rem;
-}
-
-.products .box-container .box .content .stars{
-    padding: 1.5rem;
-}
-
-.products .box-container .box .content .stars i{
-    font-size: 1.7rem;
-    color: var(--main-color);
-}
-
-.products .box-container .box .content .price{
-    color:#1d1c1a;
-    font-size: 2.5rem;
-}
-
-.products .box-container .box .content .price span{
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1.5rem;
-} */
-
 .service .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -477,7 +417,7 @@ section{
 .service .box-container .box .user{
     height: 7rem;
     width: 7rem;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover;
 }
 
@@ -507,13 +447,13 @@ section{
 
 .contact .row form{
     flex:1 1 45rem;
-    padding:5rem 2rem;
+    padding:2.5rem 1.5rem;
     text-align: center;
 }
 
 .contact .row form h3{
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color:#fff;
 }
 
@@ -526,7 +466,7 @@ section{
     border:var(--border);
 }
 
-.contact .row form .inputBox span{
+ .contact .row form .inputBox span{
     color:#13131a;
     font-size: 2rem;
     padding-left: 2rem;
@@ -536,10 +476,25 @@ section{
     width: 100%;
     padding:2rem;
     font-size: 1.7rem;
-    /* color:#fff; */
     color: #1d1c1a;
     text-transform: none;
     background:none;
+} 
+
+.submit button{
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    padding: 11px 14px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.submit button:hover{
+    letter-spacing: .2rem;
 }
 
 .product .box-container{
@@ -748,4 +703,6 @@ section{
     }
 
 }
+
+
 
