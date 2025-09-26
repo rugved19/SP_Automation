@@ -13,6 +13,8 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- owl carosual cdns  -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -98,6 +100,74 @@
 
 
 <!--Swiper sec end-->
+
+<!--Industries Section Start-->
+
+<section class="industries">
+  <h2>INDUSTRIES</h2>
+  <p>We cater to diverse industries, enabling them to optimise their processes through <br>innovative automation solutions.</p>
+
+  <div class="industries-grid">
+    <div class="industry-box">
+      <i class="fas fa-car"></i>
+      <h3>Automotive Sector</h3>
+    </div>
+    <div class="industry-box">
+      <i class="fas fa-industry"></i>
+      <h3>Cement Industry</h3>
+    </div>
+    <div class="industry-box">
+      <i class="fas fa-server"></i>
+      <h3>Data Centers</h3>
+    </div>
+    <div class="industry-box">
+      <i class="fas fa-bolt"></i>
+      <h3>Energy Sector</h3>
+    </div>
+
+    <div class="industry-box">
+      <i class="fas fa-utensils"></i>
+      <h3>Food & Beverages</h3>
+    </div>
+    <div class="industry-box">
+      <i class="fas fa-cogs"></i>
+      <h3>Intralogistics Automation</h3>
+    </div>
+    <div class="industry-box">
+      <i class="fas fa-box"></i>
+      <h3>Material Handling</h3>
+    </div>
+    <div class="industry-box">
+      <i class="fas fa-gem"></i>
+      <h3>Metals & Mining</h3>
+    </div>
+  </div>
+</section>
+
+
+
+<!--Client Section Start-->
+
+<section class="clients">
+  <h2>CLIENTS</h2>
+  <p> We deliver advanced & tailored automation solutions to some of the most respected<br> companies across the world.</p>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/SpAuto_Partner_1.png" alt="Client 1"></div>
+      <div class="swiper-slide"><img src="/images/SpAuto_Partner_2.png" alt="Client 2"></div>
+      <div class="swiper-slide"><img src="/images/SpAuto_Partner_3.png" alt="Client 3"></div>
+      <div class="swiper-slide"><img src="/images/SpAuto_Partner_4.png" alt="Client 4"></div>
+      <div class="swiper-slide"><img src="/images/SpAuto_Partner_5.png" alt="Client 5"></div>
+      <div class="swiper-slide"><img src="/images/SpAuto_Partner_6.png" alt="Client 6"></div>
+    </div>
+  </div>
+</section>
+
+<!--Client Section End-->
+
+
 
 <!-- about section starts  -->
 
@@ -303,6 +373,29 @@
         
     </form>
 
+    <!--Progress Section Start-->
+
+<section class="features-section">
+ 
+  <div class="feature-box">
+    <i class="fas fa-flag"></i>
+    <h3>02</h3>
+    <p>Country Servecied</p>
+  </div>
+
+  <div class="feature-box">
+    <i class="fas fa-project-diagram"></i>
+    <h3>15+</h3>
+    <p>Project Handover</p>
+  </div>
+
+  <div class="feature-box">
+    <i class="fas fa-award"></i>
+    <h3>06+</h3>
+    <p>Year Of Legacy</p>
+  </div>
+</section>
+<!--Progress Section End-->
     
 
 </section> 
@@ -399,6 +492,25 @@
         items: 1,
         nav: false
       }
+    }
+  });
+</script>
+
+<!-- Swiper JS For Clients-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,  // 
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      320: { slidesPerView: 2, spaceBetween: 10 },   // mobile
+      768: { slidesPerView: 3, spaceBetween: 20 },   // tablet
+      1024: { slidesPerView: 4, spaceBetween: 30 },  // desktop
     }
   });
 </script>
