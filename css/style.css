@@ -51,7 +51,7 @@ section{
     color:#1d1c1a;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
-    font-size: 4rem;
+    font-size: 30px;
 }
 
 .heading span{
@@ -714,7 +714,7 @@ section{
 }
 
 .clients h2 {
-  font-size: 3.5rem;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #1d1c1a;
@@ -725,7 +725,7 @@ section{
   color: #444;
   max-width: 750px;
   margin: 0 auto 4rem;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -773,7 +773,7 @@ section{
 }
 
 .industries h2 {
-  font-size: 3.5rem;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #1d1c1a;
@@ -784,7 +784,7 @@ section{
   color: #444;
   max-width: 750px;
   margin: 0 auto 4rem;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -871,50 +871,67 @@ section{
    =========================== */
 
 .features-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: #fff;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  margin: 30px auto;
-  padding: 15px 20px;
-  border-radius: 6px;
   max-width: 1100px;
+  margin: 30px auto;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.features-section p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
+  background: #fff;                       /* white box background for features */
+  padding: 15px 20px;                     /* top-bottom small, left-right larger */
+  border-radius: 7px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* strong shadow */
 }
 
 .feature-box {
-  text-align: center;
   flex: 1;
-  min-width: 220px;
-  padding: 15px 20px;
+  min-width: 200px;
+  padding: 8px;
   border-right: 1px solid #eee;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-align: center;
 }
 
 .feature-box:last-child {
   border-right: none;
 }
 
+.feature-box:hover {
+  transform: translateY(-5px);           /* lift effect on hover */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  color: #000;                           /* hover text color */
+}
+
 .feature-box i {
-  font-size: 32px;
+  font-size: 32px;                       /* icon size */
   color: #222;
   margin-bottom: 10px;
 }
 
 .feature-box h3 {
   font-size: 18px;
-  margin: 10px 0;
+  margin: 10px 0;                        /* heading margin */
   font-weight: bold;
   color: #222;
 }
 
 .feature-box p {
-  color: #555;
   font-size: 14px;
-}
-
-.feature-box:hover {
-  transform: translateY(-5px);
-  color: #000;
+  color: #555;
 }
